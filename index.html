@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Google Font (Font Family) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Css Link Style -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Meta Tags *******************************************************////////////////////// -->
+    <title>Spotify Clone</title>
+    <!-- Character Set -->
+    <meta charset="UTF-8" />
+
+    <!-- Viewport for Responsive Web Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Page Description (SEO) -->
+    <meta
+      name="description"
+      content="Spotify Clone is a modern music streaming platform where you can enjoy millions of songs, create playlists, and explore new music, just like Spotify."
+    />
+
+    <!-- Keywords (SEO) -->
+    <meta
+      name="keywords"
+      content="Spotify Clone, music streaming, online music, playlists, song library, music app, audio streaming, listen to music, free music, music player"
+    />
+
+    <!-- Author Information -->
+    <meta name="author" content="Kerolos Khairy && John Ayman" />
+
+    <!-- Robots (for search engines) -->
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph Meta Tags (For Social Media Sharing) -->
+    <meta
+      property="og:title"
+      content="Spotify Clone - Stream Your Favorite Music"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://kerllouskhairy987.github.io/spotify_clone/" />
+    <meta property="og:image" content="https://kerllouskhairy987.github.io/spotify_clone/imgs/spotify_img.jpg" />
+    <meta
+      property="og:description"
+      content="Discover new music, stream your favorite songs, and create playlists on Spotify Clone, the ultimate music streaming platform."
+    />
+    <meta property="og:site_name" content="Spotify Clone" />
+
+    <!-- Twitter Cards Meta Tags (For Twitter Sharing) -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@spotifyclone" />
+    <meta
+      name="twitter:title"
+      content="Spotify Clone - Stream Your Favorite Music"
+    />
+    <meta
+      name="twitter:description"
+      content="Explore millions of songs and create your own playlists with Spotify Clone."
+    />
+    <meta name="twitter:image" content="https://kerllouskhairy987.github.io/spotify_clone/imgs/spotify_img.jpg" />
+
+    <!-- Favicon and Theme Color -->
+    <link rel="icon" href="imgs/icon.png" type="image/x-icon" />
+    <meta name="theme-color" content="#1DB954" />
+
+    <!-- Security/Privacy Meta Tags -->
+    <!-- <meta http-equiv="X-Frame-Options" content="deny">
+    <meta name="referrer" content="no-referrer"> -->
+  </head>
+
+  <body>
+    <div class="container">
+      <div>
+        <div class="content">
+          <!-- Satart Top Content -->
+          <div class="top-content">
+            <div>
+              <div class="title-menu">
+                <h1>Spotify</h1>
+                <i
+                  onclick="appearMenu()"
+                  id="menu"
+                  class="fa-solid fa-bars"
+                ></i>
+              </div>
+              <p>
+                Experience music like never before with spotify clone, the
+                ultimate streaming platform where you can discover, listen, and
+                share your favorite tracks. Browse an expansive library of
+                songs, curated playlists, and podcasts across all genres,
+                tailored to your unique taste. Whether you're chilling at home,
+                on a road trip, or working out, spotify clone lets you enjoy
+                seamless, high-quality music anytime, anywhere. Create
+                personalized playlists, follow your favorite artists, and
+                explore new sounds—all in one sleek and user-friendly app.
+              </p>
+            </div>
+            <img src="imgs/content_.png" alt="Spotify Image" />
+          </div>
+          <!-- End Top Content -->
+          <!-- Start Drawing Songs  -->
+          <div id="songsPlace"></div>
+          <!-- End Drawing Songs  -->
+        </div>
+
+        <!-- Start Aside Part Contain [LoGo, Filter Songs] -->
+        <div class="aside">
+          <div class="aside-top">
+            <h2>
+              <a href="index.html" title="Home Page"
+                ><i class="fa-brands fa-spotify"></i> Spotify</a
+              >
+            </h2>
+            <i onclick="disappearMenu()" class="fa-solid fa-x"></i>
+          </div>
+          <h3>Playlist</h3>
+          <div>
+            <!-- Start Option Of All Songs -->
+            <div class="all-songs">
+              <label for="all" class="active">
+                <input name="filter-song" type="radio" id="all" />
+                <h4>All</h4>
+              </label>
+            </div>
+            <!-- End Option Of All Songs -->
+            <!-- Start Option Of Arabic Songs
+                    appearArabicList() This Fuction To Appear The Arabic List-->
+            <div class="arabic-songs songs-section">
+              <label for="arabic" onclick="appearArabicList()">
+                <input name="filter-song" type="radio" id="arabic" />
+                <h4>Arabic Songs</h4>
+              </label>
+
+              <div>
+                <div id="om">
+                  <img src="imgs/om_active.jfif" alt="Om-kalthoom Image" />
+                  <h4>Om Kelthoom</h4>
+                </div>
+                <div id="fairouz">
+                  <img src="imgs/F-acrive.jfif" alt="Fairouz Image" />
+                  <h4>Fairouz</h4>
+                </div>
+                <div id="abdo">
+                  <img
+                    src="imgs/abdo_active.jfif"
+                    alt="Abelelhalim Hafez Image"
+                  />
+                  <h4>Abelelhalim Hafez</h4>
+                </div>
+                <div id="romantic">
+                  <img src="imgs/romantic_active.jfif" alt="Romantic Image" />
+                  <h4>Romantic Songs</h4>
+                </div>
+              </div>
+            </div>
+            <!-- End Option Of Arabic Songs -->
+            <!-- Start Option Of English Songs -->
+            <div class="english-songs">
+              <label for="english" style="display: flex">
+                <input name="filter-song" type="radio" id="english" />
+                <h4>English Songs</h4>
+              </label>
+            </div>
+            <!-- End Option Of English Songs -->
+            <!-- Start Option Of Fav Songs -->
+            <div class="fav-songs songs-section">
+              <label for="fav" onclick="appearArabicList()">
+                <input name="filter-song" type="radio" id="fav" />
+                <h4>Favourite Songs</h4>
+              </label>
+
+              <div></div>
+            </div>
+            <!-- End Option Of Fav Songs -->
+          </div>
+        </div>
+        <!-- End Aside Part Contain [LoGo, Filter Songs] -->
+      </div>
+    </div>
+
+    <!-- Start Controls Part  -->
+    <div class="controls">
+      <div class="container">
+        <div class="controls-info">
+          <div class="name">
+            <img src="imgs/abdo_1.jfif" alt="abdo image" />
+            <div>
+              <h4>Abelelhalim Hafez</h4>
+              <p>gpar</p>
+            </div>
+          </div>
+
+          <div class="details">
+            <div class="details-progress">
+              <div class="progress">
+                <audio src="songs/1.m4a"></audio>
+              </div>
+              <div class="song-timer">
+                <span class="current-time">00:00</span>
+                <span class="duration">00:00</span>
+              </div>
+            </div>
+            <div class="ctrl-song">
+              <i id="repeat" title="loop list" class="fas fa-repeat"></i>
+
+              <i
+                title="Previous Song"
+                id="prev"
+                class="fa-solid fa-square-caret-left"
+              ></i>
+
+              <div class="play-song">
+                <i class="fa-solid fa-play"></i>
+              </div>
+
+              <i
+                title="Next Song"
+                id="next"
+                class="fa-solid fa-square-caret-right"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- End Controls Part  -->
+
+  <script src="./js/styleResponsive.js"></script>
+  <script src="./js/data.js"></script>
+  <script src="./js/script.js"></script>
+</html>
