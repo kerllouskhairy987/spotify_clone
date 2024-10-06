@@ -1,0 +1,35 @@
+-- Design      // Kerolos
+
+-- [1] filter     // John
+-- [2] play       // Kerolos
+-- [3] next       // Kerolos
+-- [4] previous   // Kerolos
+-- [5] Loop List [1]/ Loop Song [2] / Shuffle [3]    // John
+-- [6] Add To Fav [add to fav ==> Lemght {           // John
+    image : name
+}]
+
+
+DONE BY Kerolos __
+-- Design
+-- Functions
+--    ** Important Varaible ==> musicIndex = 0 && isPlaying = fasle
+--    **__ Functions
+--    ** loadSong    دي بتحمل الاغنيه باللي فيها الصوره و الاغنيه و المغني و الوصف و كل حاجة ليها علاقه بالصوره
+--    ** playMusic  بتحول البياينج ل ترو و بتغير شكل الايكن و نتعمل بلاي ل الاديو
+--    ** puaseMusic  عكس ال بلاي بتغير ال بلاينج ل فولس و بتغير الايكن و بتعمل بوذ ل الاديو
+--    ** 
+--    ** next   [give you the next song]
+--    ** prev   [give you the previous song]
+--    ** repeat song / repeat list / shuffle with if condition 
+--    ** run audio depend on state [repeat song / repeat list / shuffle] ==> The Event Is -- [ended]
+
+
+
+--    ** draw the array of musics in the page  
+--    ** Play songs from drawing part [Playing && Paused] 
+
+
+
+DONE BY John ___
+-- 
