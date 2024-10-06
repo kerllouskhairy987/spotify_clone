@@ -336,7 +336,6 @@ i {
     flex-direction: column;
     flex-grow: 1;
     gap: 20px;
-    /* background-color: red; */
 }
 
 .controls .container .details .details-progress {
@@ -352,6 +351,7 @@ i {
     border-radius: 10px;
     background-color: #FFE;
     position: relative;
+    width: 0px;
 }
 .controls .container .details .details-progress .progress::after {
     position: absolute;
